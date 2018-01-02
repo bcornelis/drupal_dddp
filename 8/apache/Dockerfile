@@ -2,7 +2,7 @@ FROM drupal:8.3-apache
 
 WORKDIR /var/www/html
 
-apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
   && php composer-setup.php --install-dir=/tmp \
