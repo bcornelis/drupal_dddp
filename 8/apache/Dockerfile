@@ -1,4 +1,4 @@
-FROM drupal:8.3-apache
+FROM drupal:8.5-apache
 
 WORKDIR /var/www/html
 
